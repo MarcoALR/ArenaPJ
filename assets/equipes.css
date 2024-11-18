@@ -206,7 +206,7 @@ width: 100%;
 }
 
 .header {
-font-size: 30%;
+font-size: 44%;
 }
 
 .content {
@@ -218,3 +218,20 @@ width: 85%;
 margin: 0 auto;
 }
 }
+
+@media (max-width: 480px) {
+
+    .header {
+        font-size: 36%;
+    }
+
+
+}
+
+@media (max-width: 360px){
+    .header a {
+      font-size: 5px;
+  }
+  }
+
+  

@@ -351,6 +351,18 @@ border-radius: 8px; /* Bordas arredondadas na imagem */
   }
 
   .header a {
-      font-size: 0.93vh;
+      font-size: 44%;
   }
+}
+
+@media (max-width: 390px){
+  .header a {
+    font-size: 40%;
+}
+}
+
+@media (max-width: 360px){
+  .header a {
+    font-size: 38%;
+}
 }

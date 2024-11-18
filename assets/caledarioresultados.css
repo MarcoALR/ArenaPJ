@@ -452,8 +452,17 @@
     @media (max-width: 480px) {
 
         .header {
-            font-size: 30%;
+            font-size: 36%;
         }
 
 
     }
+
+    @media (max-width: 360px){
+        .header a {
+          font-size: 5px;
+      }
+      }
+
+   
+
