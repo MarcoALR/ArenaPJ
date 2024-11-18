@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres da página como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura o viewport para dispositivos móveis -->
+    <link rel="icon" href="/assets/logos/14.png" type="logo">
+    <title> 2024 ArenaPJ</title> <!-- Título da página que aparecerá na aba do navegador -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Link para o CSS do Font Awesome, que fornece ícones -->
+    <link rel="stylesheet" href="/assets/styles/caledarioresultados.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="CriarTorneio.html"><img alt="ArenaPJ Logo" src="/assets/logos/1.jpg" /></a>
+        <!-- Link para a página de criação do torneio com logo -->
+        <nav>
+            <a href="CriarTorneio.html">CRIAR UM TORNEIO</a> <!-- Link para criar um torneio -->
+            <a href="EncontrarTorneio.html">ENCONTRAR UM TORNEIO</a> <!-- Link para encontrar um torneio -->
+            <a class="btn" href="#">INSCREVER-SE/ENTRAR</a> <!-- Botão para inscrição ou entrada -->
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Torneio de Eliminação Mata-Mata</h1> <!-- Título do torneio -->
+        <div class="tabs">
+            <a href="VisãoGeral.html">VISÃO GERAL</a> <!-- Link para a visão geral -->
+            <a class="active" href="#">CALENDÁRIO DE GRUPOS</a>
+            <!-- Link para o calendário de grupos, marcado como ativo -->
+            <a href="Equipes.html">EQUIPES</a> <!-- Link para as equipes -->
+        </div>
+
+        <center>
+            <button id="shuffleButton" onclick="embaralharEquipes(equipes); gerarTorneio();">Embaralhar Equipes</button>
+            <i id="Cog" class="fa fa-cogs" aria-hidden="true"></i>
+        </center>
+
+        <div class="bracket" id="bracket">
+            <!-- As rodadas serão criadas dinamicamente aqui -->
+        </div>
+    </div>
+    <!-- Modal para Edição de Resultados -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Editar Resultado</h2> <!-- Título do modal -->
+                <span class="close-modal" id="closeModal">&times;</span> <!-- Ícone de fechar o modal -->
+            </div>
+            <div class="modal-body">
+                <div class="input-field">
+                    <label for="team1Score">Equipe 1 Pontos:</label> <!-- Rótulo para a pontuação da equipe 1 -->
+                    <input type="number" id="team1Score" min="0" value="0">
+                    <!-- Campo de entrada para a pontuação da equipe 1 -->
+                </div>
+                <div class="input-field">
+                    <label for="team2Score">Equipe 2 Pontos:</label> <!-- Rótulo para a pontuação da equipe 2 -->
+                    <input type="number" id="team2Score" min="0" value="0">
+                    <!-- Campo de entrada para a pontuação da equipe 2 -->
+                </div>
+                <div class="input-field">
+                    <label for="winner">Vencedor:</label> <!-- Rótulo para seleção do vencedor -->
+                    <select id="winner" disabled> <!-- Campo de seleção para o vencedor, desabilitado inicialmente -->
+                        <option value="">Selecione um vencedor</option>
+                        <!-- Opção padrão para selecionar um vencedor -->
+                        <!-- Vencedor será preenchido dinamicamente -->
+                    </select>
+                </div>
+                <button id="saveResult">Salvar Resultado</button> <!-- Botão para salvar o resultado -->
+            </div>
+        </div>
+    </div>
+   <script src="/assets/scripts/CalendárioeResultado.js"></script>
+</body>
+
+</html>

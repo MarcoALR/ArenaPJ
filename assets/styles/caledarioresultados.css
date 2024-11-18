@@ -1,0 +1,459 @@
+       /* Estilos gerais da página */
+       body {
+        font-family: Arial, sans-serif;
+        /* Define a fonte padrão da página */
+        margin: 0;
+        /* Remove a margem padrão do body */
+        padding: 0;
+        /* Remove o padding padrão do body */
+        background-image: url(/assets/backgrounds/paper-style-wavy-background/6047710.jpg);
+        /* Define a cor de fundo da página */
+    }
+
+    /* Estilos para o cabeçalho */
+    .header {
+        background-color: #1e88e5;
+        /* Cor de fundo do cabeçalho */
+        color: white;
+        /* Cor do texto do cabeçalho */
+        padding: 10px 20px;
+        /* Espaçamento interno do cabeçalho */
+        display: flex;
+        /* Utiliza flexbox para organizar os itens dentro do cabeçalho */
+        align-items: center;
+        /* Alinha os itens verticalmente ao centro */
+        justify-content: space-between;
+        /* Distribui espaço entre os itens, colocando-os nas extremidades */
+    }
+
+
+
+/* MEXER AQUI IGORRRRRRRRRR */
+
+.partida {
+    position: relative; /* Para controle de posicionamento */
+    transition: transform 0.3s ease; /* Suaviza o efeito ao passar o mouse */
+}
+
+.partida:hover {
+    transform: scale(1.03); /* Leve aumento ao passar o mouse */
+}
+
+.partida.salva {
+    position: relative;
+    border-bottom: 4px solid #4CAF50; /* Borda fixa verde na parte inferior */
+}
+    
+/* Estilo para o vencedor do torneio */
+.resultado {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Título principal "Parabéns" */
+
+.resultado h2 {
+    color: #007bff;
+}
+
+/* Estilo do texto que apresenta o vencedor */
+.resultado p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Nome do vencedor */
+.resultado h3 {
+    font-size: 1.5rem;
+    color: #28a745;
+}
+
+/* Texto explicativo sobre a impressão */
+.resultado .explicacao {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilo do botão de impressão */
+#printButton {
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Alterações visuais no botão ao passar o mouse */
+#printButton:hover {
+    opacity: 1;
+    background-color: #5a6268;
+}
+
+
+    .tabs a {
+        transition: transform 0.6s;
+
+    }
+
+    .tabs a:hover {
+        transform: scale(1.08);
+    }
+
+
+    .header img {
+        height: 40px;
+        /* Define a altura da imagem do logo do cabeçalho */
+    }
+
+    .header nav a {
+        color: white;
+        /* Cor dos links no cabeçalho */
+        margin-left: 20px;
+        /* Espaço à esquerda dos links */
+        text-decoration: none;
+        /* Remove o sublinhado dos links */
+    }
+
+    /* Estilos para o botão no cabeçalho */
+    .header .btn {
+        background-color: #1e88e5;
+        /* Cor de fundo do botão */
+        border: 1px solid white;
+        /* Borda do botão */
+        padding: 5px 10px;
+        /* Espaçamento interno do botão */
+        color: white;
+        /* Cor do texto do botão */
+        text-decoration: none;
+        /* Remove o sublinhado do botão */
+        border-radius: 5px;
+        /* Bordas arredondadas do botão */
+    }
+
+    /* Estilos para a seção de conteúdo principal */
+    .main-content {
+        padding: 20px;
+        /* Espaçamento interno da seção de conteúdo principal */
+    }
+
+    .main-content h1 {
+        color: #1e88e5;
+        /* Cor do título principal */
+        text-align: center;
+        /* Centraliza o título */
+    }
+
+    /* Estilos para o bracket do torneio */
+    .bracket {
+        display: flex;
+        /* Utiliza flexbox para organizar as rodadas do torneio */
+        justify-content: center;
+        /* Centraliza as rodadas */
+        flex-wrap: wrap;
+        /* Permite que as rodadas se movam para a próxima linha se necessário */
+        margin-top: 20px;
+        /* Espaço acima do bracket */
+    }
+
+    /* Estilos para cada rodada do torneio */
+    .rodada {
+        display: flex;
+        /* Utiliza flexbox para organizar as partidas dentro da rodada */
+        flex-direction: column;
+        /* Alinha as partidas verticalmente */
+        align-items: center;
+        /* Centraliza as partidas horizontalmente */
+        margin: 0 20px;
+        /* Espaçamento lateral da rodada */
+    }
+
+    /* Estilos para cada partida */
+    .partida {
+        border: 1px solid #1e88e5;
+        /* Borda da partida */
+        border-radius: 5px;
+        /* Bordas arredondadas da partida */
+        background-color: #ffffff;
+        /* Cor de fundo da partida */
+        padding: 10px;
+        /* Espaçamento interno da partida */
+        margin: 20px 0;
+        /* Espaçamento vertical entre as partidas */
+        text-align: center;
+        /* Centraliza o conteúdo da partida */
+        width: 180px;
+        /* Largura fixa da partida */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+
+    /* Estilos para o título da partida */
+    .partida h3 {
+        background-color: #1e88e5;
+        /* Cor de fundo do título da partida */
+        color: #fff;
+        /* Cor do texto do título */
+        padding: 5px;
+        /* Espaçamento interno do título */
+        margin: 0;
+        /* Remove a margem do título */
+        font-size: 14px;
+        /* Tamanho da fonte do título */
+    }
+
+    /* Estilos para as equipes dentro da partida */
+    .equipes {
+        padding: 5px 0;
+        /* Espaçamento vertical das equipes */
+        font-size: 14px;
+        /* Tamanho da fonte das equipes */
+    }
+
+    /* Estilos para os ícones dentro da partida */
+    .icones {
+        display: flex;
+        /* Utiliza flexbox para organizar os ícones */
+        justify-content: space-around;
+        /* Distribui os ícones uniformemente */
+        padding-top: 10px;
+        /* Espaçamento acima dos ícones */
+    }
+
+    .icones i {
+        color: #1e88e5;
+        /* Cor dos ícones */
+        cursor: pointer;
+        /* Muda o cursor ao passar o mouse sobre o ícone */
+    }
+
+    /* Estilos para o modal de edição */
+    .modal {
+        display: none;
+        /* Inicialmente oculta o modal */
+        position: fixed;
+        /* Fixa o modal na tela */
+        z-index: 100;
+        /* Define a camada do modal para que fique acima de outros elementos */
+        left: 0;
+        /* Posiciona o modal à esquerda da tela */
+        top: 0;
+        /* Posiciona o modal no topo da tela */
+        width: 100%;
+        /* Largura total da tela */
+        height: 100%;
+        /* Altura total da tela */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fundo escurecido do modal */
+        justify-content: center;
+        /* Centraliza o conteúdo do modal */
+        align-items: center;
+        /* Alinha o conteúdo do modal verticalmente ao centro */
+    }
+
+    
+
+            /* Estilização do conteúdo do modal */
+    .modal-content {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        width: 350px;
+        max-width: 90%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        /* Sombra para dar um destaque ao modal */
+        font-family: Arial, sans-serif;
+    }
+
+    /* Estilização do título do modal */
+    .modal-content h2 {
+        font-size: 1.5em;
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Estilização dos rótulos (labels) */
+    .modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+        font-weight: bold;
+    }
+
+    /* Estilização dos campos de input */
+    .modal-content input[type="text"],
+    .modal-content select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        box-sizing: border-box;
+        /* Faz com que o padding seja incluído no cálculo da largura */
+    }
+    
+
+    /* Estilização do botão */
+    .modal-content button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .modal-content button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Estilização do botão de fechar (X) */
+    .modal-content .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.2em;
+        color: #333;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .modal-content .close-btn:hover {
+        color: #ff0000;
+    }
+
+        #team1Score,#team2Score {
+    width: 100%;
+    max-width: 400px; /* Ajuste para o tamanho desejado */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+    /* Estilos para o cabeçalho do modal */
+    .modal-header {
+        display: flex;
+        /* Utiliza flexbox para organizar os itens do cabeçalho */
+        justify-content: space-between;
+        /* Distribui espaço entre os itens */
+        align-items: center;
+        /* Alinha os itens verticalmente ao centro */
+        margin-bottom: 15px;
+        /* Espaço abaixo do cabeçalho */
+    }
+
+    .modal-header h2 {
+        margin: 0;
+        /* Remove a margem do título do cabeçalho do modal */
+    }
+
+    .modal-header .close-modal {
+        cursor: pointer;
+        /* Muda o cursor ao passar o mouse sobre o ícone de fechar */
+        font-size: 20px;
+        /* Tamanho da fonte do ícone de fechar */
+    }
+
+    /* Estilos para a seção de conteúdo principal novamente (repetido desnecessariamente) */
+    .main-content {
+        padding: 20px;
+        /* Espaçamento interno da seção de conteúdo principal */
+    }
+
+    .main-content h1 {
+        color: #1e88e5;
+        /* Cor do título principal */
+        text-align: center;
+        /* Centraliza o título */
+    }
+
+    /* Estilos para as abas de navegação */
+    .tabs {
+        display: flex;
+        /* Utiliza flexbox para organizar as abas */
+        justify-content: center;
+        /* Centraliza as abas */
+        margin-bottom: 20px;
+        /* Espaço abaixo das abas */
+    }
+
+    .tabs a {
+        margin: 0 10px;
+        /* Espaço lateral entre as abas */
+        text-decoration: none;
+        /* Remove o sublinhado das abas */
+        color: #1e88e5;
+        /* Cor do texto das abas */
+        padding: 10px 20px;
+        /* Espaçamento interno das abas */
+        border-bottom: 2px solid transparent;
+        /* Borda inferior invisível */
+    }
+
+    .tabs a.active {
+        border-bottom: 2px solid #1e88e5;
+        /* Borda inferior visível para a aba ativa */
+    }
+
+    #printButton {
+        display: none;
+        /* Inicialmente oculto */
+        background-color: #1e88e5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    #shuffleButton:hover {
+        transform: scale(1.08);
+    }
+
+
+    #shuffleButton {
+        transition: transform 0.6s;
+        border: none;
+        color: #f9f9f9;
+        background-color: #1e88e5;
+        border-radius: 6px;
+        width: 100px;
+    }
+
+    #Cog {
+        margin: 1vh;
+        color: #1e88e5;
+    }
+
+    @media (max-width: 480px) {
+
+        .header {
+            font-size: 30%;
+        }
+
+
+    }

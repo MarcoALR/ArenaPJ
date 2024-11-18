@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 ArenaPJ</title>
+    <!-- Define o ícone da página -->
+    <link rel="icon" href="/assets/logos/14.png" type="logo">
+    <!-- Inclui o arquivo de CSS externo para a estilização -->
+    <link rel="stylesheet" href="/assets/styles/criartorneio.css">
+</head>
+
+<body>
+    <!-- Cabeçalho com o menu de navegação -->
+    <header>
+        <div class="menu">
+            <a href="CriarTorneio.html">CRIAR UM TORNEIO</a> <!-- Link para a criação de um torneio -->
+            <a href="EncontrarTorneio.html">ENCONTRAR UM TORNEIO</a> <!-- Link para encontrar torneios -->
+        </div>
+        
+        <div class="conta-menu">
+            <button>CRIAR CONTA</button> <!-- Botão para criar uma conta -->
+        </div>
+    </header>
+    
+    <!-- Modal para login/registro -->
+    <div id="modalAutenticacao" class="modal"> <!-- Modal para autenticação -->
+        <div class="modal-conteudo">
+            <span class="fecharModal">&times;</span> <!-- Botão para fechar o modal -->
+            <!-- Abas para alternar entre login e registro -->
+            <div class="abasAutenticacao">
+                <button class="aba-link" id="abaLogin">Entrar</button> <!-- Aba de login -->
+                <button class="aba-link" id="abaRegistro">Inscrever-se</button> <!-- Aba de registro -->
+            </div>
+            <!-- Formulário de Login -->
+            <div id="formLogin" class="conteudo-aba ativa"> <!-- Formulário de login (ativo por padrão) -->
+                <form class="cent">
+                    <label for="emailLoginInput">Endereço de Email *</label>
+                    <input type="email" id="emailLoginInput" required> <!-- Campo de email para login -->
+                    <br>
+                    <label for="senhaLoginInput">Senha *</label>
+                    <input type="password" id="senhaLoginInput" required> <!-- Campo de senha para login -->
+                    <br><br>
+                    <button type="submit">Entrar</button> <!-- Botão de envio para login -->
+                    <br><br>
+                    <a href="#">Esqueceu a senha?</a> <!-- Link para recuperação de senha -->
+                </form>
+            </div>
+            <!-- Formulário de Registro -->
+            <div id="formRegistro" class="conteudo-aba"> <!-- Formulário de registro -->
+                <form class="cent">
+                    <label for="emailRegistroInput">Endereço de Email *</label>
+                    <input type="email" id="emailRegistroInput" required> <!-- Campo de email para registro -->
+                    <label for="senhaRegistroInput">Senha *</label>
+                    <input type="password" id="senhaRegistroInput" required> <!-- Campo de senha para registro -->
+                    <label for="confirmSenhaInput">Confirmar Senha *</label>
+                    <input type="password" id="confirmSenhaInput" required> <!-- Campo para confirmar senha -->
+                    <br><br><!-- QUEBRA DE LINHA -->
+                    <div class="descer-chek">
+                        <input type="checkbox" id="checkComunicacao">
+                        <label for="checkComunicacao">Receber comunicações por e-mail</label>
+                        <!-- Checkbox para receber comunicações -->
+                    </div>
+                    <button type="submit">Cadastrar</button> <!-- Botão de envio para registro -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário para criar torneio -->
+    <div class="container">
+        <h2 class="cent">Monte Seu Campeonato</h2>
+        <p class="cent">Crie seu torneio agora mesmo! É grátis e sem enrolação</p>
+        <!-- Campo para selecionar esporte -->
+        <label for="esporte">Selecione o Esporte</label>
+        <select id="esporte">
+            <option>Futsal</option>
+            <option>Vôlei</option>
+            <option>Handebol</option>
+            <option>Queimada</option>
+            <option>Cabo de Guerra</option>
+            <option>Basquete</option>
+            <option>Just Dance</option>
+            <option>FIFA</option>
+        </select>
+        <!-- Campo para selecionar número de participantes -->
+        <label for="participantes">N# de Equipes Participantes</label>
+        <select id="participantes">
+            <!-- Opções dinâmicas serão preenchidas aqui -->
+        </select>
+        <!-- Opções de formato do torneio -->
+        <div class="formats">
+            <div class="format-option">
+                <input type="radio" id="mata-mata" name="formato" value="mata-mata" checked>
+                <label for="mata-mata">Mata-Mata</label>
+            </div>
+            <div class="format-option">
+                <input type="radio" id="duplo-mata-mata" name="formato" value="duplo-mata-mata">
+                <label for="duplo-mata-mata">Duplo Mata-mata</label>
+            </div>
+            <div class="format-option">
+                <input type="radio" id="liga" name="formato" value="liga">
+                <label for="liga">Liga Todos Contra Todos</label>
+            </div>
+            <div class="format-option">
+                <input type="radio" id="fases" name="formato" value="fases">
+                <label for="fases">Fases Múltiplas: Ligas + Mata-Mata</label>
+            </div>
+        </div>
+        <p class="info">Relaxa, você poderá ajustar mais detalhes depois</p>
+        <!-- Botão para iniciar o campeonato -->
+        <button id="iniciarCampeonato">INICIAR CAMPEONATO</button>
+    </div>
+    <footer>&copy; 2024 ArenaPJ - Criadores de Campeonatos</footer>
+
+    <script src="/assets/scripts/CriarTorneio1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/backgrounds/paper-style-wavy-background/6047710.jpg);
+}
+.header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tabs a {
+    transition: transform 0.6s;
+
+}
+
+.tabs a:hover {
+    transform: scale(1.08);
+}
+
+
+
+.header img {
+    height: 40px;
+}
+.header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.header .btn {
+    background-color: #1e88e5;
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.main-content {
+    padding: 20px;
+}
+.main-content h1 {
+    color: #1e88e5;
+    text-align: center;
+}
+.alert {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+.alert .btn {
+    background-color: #053d57;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tabs a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1e88e5;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+.tabs a.active {
+    border-bottom: 2px solid #1e88e5;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+}
+.card h2 {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.card table, .card th, .card td {
+    border: 1px solid #ddd;
+}
+.card th, .card td {
+    padding: 10px;
+    text-align: left;
+}
+.card .btn {
+    background-color: #1e88e5;
+    border: none;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.card .btn i {
+    margin-right: 5px;
+}
+.card .edit-icon {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.team {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.team h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #1e88e5;
+}
+.team h3 i {
+    margin-right: 10px;
+}
+.team p {
+    color: #999;
+    margin: 10px 0;
+}
+.team input {
+    width: calc(100% - 220px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.team button {
+    background-color: white;
+    color: #1e88e5;
+    border: 1px solid #1e88e5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.team button:hover {
+    background-color: #1e88e5;
+    color: white;
+}
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.actions i {
+    font-size: 18px;
+    color: #333;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+      
+
+    }
+
+  
+    
+}
+@media (max-width: 480px) {
+.rodada .partida {
+width: 100%;
+}
+
+.header {
+font-size: 30%;
+}
+
+.content {
+flex-direction: column;
+}
+
+.card {
+width: 85%; 
+margin: 0 auto;
+}
+}

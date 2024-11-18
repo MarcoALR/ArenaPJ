@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Encontrar Torneios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="/assets/logos/14.png" type="logo">
+<link rel="stylesheet" href="/assets/styles/encontrartorneio.css"></head>
+<body>
+    <div class="header">
+        <img alt="LOGO" height="40" src="/assets/logos/1.jpg" width="40"/>
+        <nav>
+            <a href="CriarTorneio.html">
+                CRIAR UM TORNEIO
+            </a>
+            <a href="EncontrarTorneio.html">
+                ENCONTRAR UM TORNEIO
+            </a>
+
+            <a class="btn" href="#">
+                INSCREVER-SE/ENTRAR
+            </a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Encontrar Torneios</h1>
+        <div class="form-group">
+            <select>
+                <option>Qualquer esporte</option>
+            </select>
+        </div>
+        <div class="slider-container">
+            <span>0</span>
+            <input type="range" min="0" max="128" value="0">
+            <span># de Participantes</span>
+            <span>128</span>
+        </div>
+        <div class="form-group">
+            <select>
+                <option>Qualquer formato</option>
+            </select>
+            <input type="text" placeholder="Qualquer nome">
+        </div>
+        <button class="btn">ENCONTRAR TORNEIOS (MÁX 10)</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Esporte</th>
+                    <th>Formato</th>
+                    <th># Participantes</th>
+                    <th>Criado em</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows here as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

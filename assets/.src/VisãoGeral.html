@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logos/14.png" type="logo">
+    <title>Visão Geral - ArenaPJ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles/visaogeral.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="CriarTorneio.html"><img alt="ArenaPJ Logo" src="/assets/logos/1.jpg" /></a>
+        <nav>
+            <a href="CriarTorneio.html">CRIAR UM TORNEIO</a>
+            <a href="EncontrarTorneio.html">ENCONTRAR UM TORNEIO</a>
+            <a class="conta-menu" href="">INSCREVER-SE/ENTRAR</a>
+        </nav>
+    </div>
+
+    <!-- Modal para login/registro -->
+    <div id="modalAutenticacao" class="modal"> <!-- Modal para autenticação -->
+        <div class="modal-conteudo">
+            <span class="fecharModal">&times;</span> <!-- Botão para fechar o modal -->
+
+            <!-- Abas para alternar entre login e registro -->
+            <div class="abasAutenticacao">
+                <button class="aba-link" id="abaLogin">Entrar</button> <!-- Aba de login -->
+                <button class="aba-link" id="abaRegistro">Inscrever-se</button> <!-- Aba de registro -->
+            </div>
+
+            <!-- Formulário de Login -->
+            <div id="formLogin" class="conteudo-aba ativa"> <!-- Formulário de login (ativo por padrão) -->
+                <form class="cent">
+                    <label for="emailLoginInput">Endereço de Email *</label>
+                    <input type="email" id="emailLoginInput" required> <!-- Campo de email para login -->
+                    <br>
+                    <label for="senhaLoginInput">Senha *</label>
+                    <input type="password" id="senhaLoginInput" required> <!-- Campo de senha para login -->
+                    <br><br>
+                    <button type="submit">Entrar</button> <!-- Botão de envio para login -->
+                    <br><br>
+                    <a href="#">Esqueceu a senha?</a> <!-- Link para recuperação de senha -->
+                </form>
+            </div>
+
+            <!-- Formulário de Registro -->
+            <div id="formRegistro" class="conteudo-aba"> <!-- Formulário de registro -->
+                <form class="cent">
+                    <label for="emailRegistroInput">Endereço de Email *</label>
+                    <input type="email" id="emailRegistroInput" required> <!-- Campo de email para registro -->
+
+                    <label for="senhaRegistroInput">Senha *</label>
+                    <input type="password" id="senhaRegistroInput" required> <!-- Campo de senha para registro -->
+
+                    <label for="confirmSenhaInput">Confirmar Senha *</label>
+                    <input type="password" id="confirmSenhaInput" required> <!-- Campo para confirmar senha -->
+
+                    <br><br><!-- QUEBRA DE LINHA -->
+
+                    <div class="descer-chek">
+                        <input type="checkbox" id="checkComunicacao">
+                        <label for="checkComunicacao">Receber comunicações por e-mail</label>
+                        <!-- Checkbox para receber comunicações -->
+                    </div>
+
+                    <button type="submit">Cadastrar</button> <!-- Botão de envio para registro -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Visão Geral do Torneio</h1>
+        <div class="tabs">
+            <a class="active" href="VisãoGeral.html">VISÃO GERAL</a>
+            <a href="CalendárioResultados.html">CALENDÁRIO DE GRUPOS</a>
+            <a href="Equipes.html">EQUIPES</a>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Configurações<!-- <i class="fas fa-pen edit-icon"></i>--></h2>
+                <table>
+                    <tr>
+                        <th>Formato</th>
+                        <td id="detalhesFormato">-</td>
+                    </tr>
+                    <tr>
+                        <th>Esporte</th>
+                        <td id="detalhesEsporte">-</td>
+                    </tr>
+                    <tr>
+                        <th>Nº de Equipes Participantes</th>
+                        <td id="detalhesParticipantes">-</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Card de detalhes -->
+
+            <!-- ABRIR UM MODAL para ESCANEAR O QR CODE  -->
+            <div class="card">
+                <h2>Gerar Qr Code das Partidas <!--<i class="fas fa-pen edit-icon"></i>--> </h2>
+
+                <table>
+                    <tr>
+                        <th>URL</th>
+                        <td><a href="#">TESTE</a></td>
+                    </tr>
+                </table>
+                <a class="btn" onclick="abrirModal()" href="#"> <i class="fas fa-print"></i>IMPRIMA O CÓDIGO QR PARA
+                    COMPARTILHAR SEU TORNEIO</a>
+
+                <a class="btn" href="CalendárioResultados.html"><i class="fa fa-share" aria-hidden="true"></i>IR PARA
+                    CHAVEAMENTO <i class="fa fa-reply" aria-hidden="true"></i></a>
+            </div>
+
+            <!-- Modal para exibir QR Code -->
+
+            <div id="modalQRCode" class="modal">
+
+                <div class="modal-content">
+
+                    <span class="close-modal" onclick="fecharModal()">&times;</span>
+
+                    <h2>"Escaneie o QR Code e acompanhe os resultados da partida ao vivo! 📣"</h2>
+
+                    <center><img src="/assets/img/" alt="QR Code"
+                            style="width:200px; max-width:300px;" /></center>
+
+                </div>
+            </div>
+            <div class="card">
+                <h2>Equipes <i class="fas fa-pen edit-icon" id="editTeamsBtn"></i></h2>
+                <table id="equipesTabela"> </table> <!-- As equipes serão preenchidas dinamicamente aqui -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal para edição de equipes -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Editar Equipes</h2>
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body" id="modalTeamsList">
+                <!-- As equipes serão preenchidas aqui -->
+            </div>
+            <div class="add-team-container">
+                <input type="text" id="newTeamName" class="add-team-input" placeholder="Nome da nova equipe">
+                <button class="add-team-button" id="addTeamBtn">Adicionar Equipe</button>
+            </div>
+            <div class="modal-footer">
+                <button class="save-btn" id="saveChanges">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+   <script src="/assets/scripts/VisãoGeral.js"></script>
+</body>
+</html>

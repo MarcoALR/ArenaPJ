@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>
+        2024 ArenaPJ
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles/equipes.css">
+    <link rel="icon" href="/assets/logos/14.png" type="logo">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="header">
+        <img alt="LOGO" height="40" src="/assets/logos/1.jpg" width="40" />
+        <nav>
+            <a href="CriarTorneio.html">
+                CRIAR UM TORNEIO
+            </a>
+            <a href="EncontrarTorneio.html">
+                ENCONTRAR UM TORNEIO
+            </a>
+
+            <a class="btn" href="#">
+                INSCREVER-SE/ENTRAR
+            </a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>
+            <i class="">
+            </i>
+            Equipes
+        </h1>
+        <div class="alert">
+            <p>
+                Este é um torneio temporário. Se você não salvar, será excluído nas próximas 24 horas.
+            </p>
+            <a class="btn" href="#">
+                INSCREVER-SE/ENTRAR
+            </a>
+        </div>
+        <div class="tabs">
+            <a href="VisãoGeral.html">
+                VISÃO GERAL
+            </a>
+            <a href="CalendárioResultados.html">
+                CALENDÁRIO DE GRUPOS
+            </a>
+            <a class="active" href="Equipes.html">
+                EQUIPES
+            </a>
+        </div>
+        <!-- PARTE IMPORTANTE PRO JS -->
+
+
+        <div class="content">
+            <!-- Título da seção que lista as equipes -->
+            <h2>Equipes</h2>
+
+            <!-- Cada equipe é encapsulada em uma div com a classe "team" -->
+            <div class="team">
+                <!-- Nome da equipe com um ícone -->
+                <h3><i class="fas fa-users"></i> Equipe #1</h3>
+                <!-- Mensagem padrão informando que não há jogadores adicionados -->
+                <p>Nenhum jogador adicionado a esta equipe</p>
+                <!-- Campo de entrada para o nome do jogador -->
+                <input type="text" placeholder="Nome do jogador">
+                <!-- Botão para adicionar um jogador à equipe -->
+                <button onclick="adicionarJogador('equipe-1')">ADICIONAR JOGADOR A EQUIPE #1</button>
+            </div>
+
+            <div class="team">
+                <h3><i class="fas fa-users"></i> Equipe #2</h3>
+                <p>Nenhum jogador adicionado a esta equipe</p>
+                <input type="text" placeholder="Nome do jogador">
+                <button onclick="adicionarJogador('equipe-2')">ADICIONAR JOGADOR A EQUIPE #2</button>
+            </div>
+
+            <div class="team">
+                <h3><i class="fas fa-users"></i> Equipe #3</h3>
+                <p>Nenhum jogador adicionado a esta equipe</p>
+                <input type="text" placeholder="Nome do jogador">
+                <button onclick="adicionarJogador('equipe-3')">ADICIONAR JOGADOR A EQUIPE #3</button>
+            </div>
+            <div class="team">
+                <h3><i class="fas fa-users"></i> Equipe #4</h3>
+                <p>Nenhum jogador adicionado a esta equipe</p>
+                <input type="text" placeholder="Nome do jogador">
+                <button onclick="adicionarJogador('equipe-4')">ADICIONAR JOGADOR A EQUIPE #4</button>
+            </div>
+            <!-- Ícones de ações gerais, como importação e exportação -->
+            <div class="actions">
+                <i class="fas fa-file-import"></i> <!-- Ícone para importar dados -->
+                <i class="fas fa-file-export"></i> <!-- Ícone para exportar dados -->
+            </div>
+        </div>
+        <!-- PARTE IMPORTANTE PRO JS -->
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

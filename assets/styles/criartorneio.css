@@ -1,0 +1,313 @@
+/* Define a estilização da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte usada na página */
+  background-image: url(/assets/backgrounds/paper-style-wavy-background/6047710.jpg);
+  margin: 0; /* Remove a margem padrão do navegador */
+  padding: 0; /* Remove o preenchimento padrão do navegador */}
+
+.container {transition: transform 0.6s;}
+
+.container:hover {
+  transform: scale(1.03);
+}
+#esporte {
+  width: 100%; /* Ajuste a largura */
+  padding: 10px; /* Espaçamento interno */
+  border: 2px solid  #666; /* Cor da borda */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: #f8f9fa; /* Cor de fundo */
+  color: #333333; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  appearance: none; /* Remove a estilização padrão do navegador */
+  -webkit-appearance: none; /* Para Safari */
+  -moz-appearance: none; /* Para Firefox */
+}
+
+/* Para o estado de foco */
+#esporte:focus {
+  outline: none; /* Remove o contorno padrão */
+  border-color: #0f2b49; /* Cor da borda ao focar */
+}
+
+/* Estiliza os options (limitações podem ocorrer) */
+#esporte option {
+  background-color: #f8f9fa; /* Cor de fundo dos options */
+  color: #007BFF /* Cor do texto dos options */
+}
+
+/* Para um melhor contraste quando o option está selecionado */
+#esporte option:checked {
+ 
+  color: #0017eb; /* Cor do texto quando selecionado */
+}
+
+#participantes {
+  width: 100%; /* Ajuste a largura */
+  padding: 10px; /* Espaçamento interno */
+  border: 2px solid  #666; /* Cor da borda */
+  border-radius: 5px; /* Cantos arredondados */
+  background-color: #f8f9fa; /* Cor de fundo */
+  color: #333333; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  appearance: none; /* Remove a estilização padrão do navegador */
+  -webkit-appearance: none; /* Para Safari */
+  -moz-appearance: none; /* Para Firefox */
+}
+
+/* Para o estado de foco */
+#participantes:focus {
+  outline: none; /* Remove o contorno padrão */
+  border-color: #0f2b49; /* Cor da borda ao focar */
+}
+
+/* Estiliza os options (limitações podem ocorrer) */
+#participantes option {
+  background-color: #f8f9fa; /* Cor de fundo dos options */
+  color: #007BFF /* Cor do texto dos options */
+}
+
+/* Para um melhor contraste quando o option está selecionado */
+#participantes option:checked {
+ 
+  color: #0017eb; /* Cor do texto quando selecionado */
+}
+
+input[type="radio"]:checked {
+  accent-color: #007BFF; /* Cor azul para o estado selecionado */
+}
+
+
+header {
+  background-color: #1e88e5; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto no cabeçalho como branca */
+  padding: 10px 20px; /* Adiciona preenchimento interno ao cabeçalho */
+  display: flex; /* Usa o Flexbox para organizar os itens no cabeçalho */
+  justify-content: space-between; /* Distribui espaço entre os elementos do cabeçalho */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.cent {
+  text-align: center;
+}
+
+header .menu {
+  display: flex; /* Exibe os itens do menu em linha */
+  gap: 20px; /* Adiciona espaço entre os itens do menu */
+}
+
+header .menu a {
+  color: white; /* Define a cor dos links do menu como branca */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto dos links como negrito */
+  
+}
+
+/* Menu do usuário e do conta com estilo relativo */
+.user-menu,
+.conta-menu {
+  position: relative; /* Permite que elementos internos se posicionem em relação a este elemento */
+}
+
+/* Estilização dos botões no menu do usuário e conta */
+.user-menu button,
+.conta-menu button {
+  background: none; /* Remove a cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  color: white; /* Define a cor do texto dos botões como branca */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  font-weight: bold; /* Define o texto dos botões como negrito */
+}
+
+/* Estilização do menu dropdown */
+.dropdown {
+  display: none; /* Inicialmente oculta o dropdown */
+  position: absolute; /* Posiciona o dropdown em relação ao seu elemento pai */
+  background-color: white; /* Define a cor de fundo do dropdown como branca */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao dropdown para profundidade */
+  right: 0; /* Alinha o dropdown à direita do seu pai */
+  top: 100%; /* Posiciona o dropdown abaixo do seu elemento pai */
+  min-width: 150px; /* Define uma largura mínima para o dropdown */
+  border-radius: 5px; /* Arredonda os cantos do dropdown */
+}
+
+.dropdown a {
+  display: block; /* Exibe cada link do dropdown como um bloco */
+  padding: 10px; /* Adiciona preenchimento interno aos links do dropdown */
+  text-decoration: none; /* Remove o sublinhado dos links do dropdown */
+  color: #024670f3; /* Define a cor dos links do dropdown */
+}
+
+/* Muda a cor de fundo dos links do dropdown ao passar o mouse */
+.dropdown a:hover {
+  background-color: #f0f8ff; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Exibe o dropdown ao passar o mouse sobre o menu do usuário */
+.user-menu:hover .dropdown {
+  display: block; /* Exibe o dropdown quando o mouse está sobre o menu do usuário */
+}
+
+/* Estilização do contêiner principal */
+.container {
+  max-width: 600px; /* Define uma largura máxima para o contêiner */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.788
+  ); /* Define a cor de fundo com leve transparência */
+  margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona margem superior/inferior */
+  padding: 20px; /* Adiciona preenchimento interno ao contêiner */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/* Estilização do título (h2) */
+h2 {
+  font-size: 24px; /* Define o tamanho da fonte do título */
+  color: #333; /* Define a cor do texto do título como um cinza escuro */
+  text-align: center; /* Centraliza o texto do título */
+}
+
+/* Estilização dos rótulos */
+label {
+  display: block; /* Exibe cada rótulo como um bloco */
+  margin: 10px 0 5px; /* Adiciona margem em cima e em baixo do rótulo */
+  color: #555; /* Define a cor do texto do rótulo como um cinza claro */
+}
+
+/* Estilização do select */
+select {
+  width: 100%; /* Define a largura do select como 100% do seu contêiner pai */
+  padding: 10px; /* Adiciona preenchimento interno ao select */
+  margin-bottom: 10px; /* Adiciona margem em baixo do select */
+  border-radius: 5px; /* Arredonda os cantos do select */
+  border: 1px solid #ccc; /* Adiciona uma borda cinza ao select */
+  background: #f9f9f9; /* Define a cor de fundo do select como um cinza claro */
+}
+
+/* Estilização para opções de formato */
+.formats {
+  display: flex; /* Exibe as opções de formato em linha */
+  flex-direction: column; /* Organiza os itens verticalmente */
+  gap: 10px; /* Adiciona espaço entre as opções */
+}
+
+/* Estilização de cada opção de formato */
+.format-option {
+  display: flex; /* Usa flexbox para organizar o conteúdo */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilização das informações adicionais */
+.info {
+  font-size: 12px; /* Define o tamanho da fonte das informações como pequeno */
+  color: #666; /* Define a cor do texto das informações como um cinza mais claro */
+  text-align: center; /* Centraliza o texto das informações */
+  margin-bottom: 10px; /* Adiciona margem em baixo das informações */
+}
+
+/* Estilização de botões */
+button {
+  background-color:  #1e88e5; /* Define a cor de fundo do botão */
+  color: white; /* Define a cor do texto do botão como branca */
+  border: none; /* Remove a borda do botão */
+  padding: 12px; /* Adiciona preenchimento interno ao botão */
+  width: 100%; /* Define a largura do botão como 100% do seu contêiner pai */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  font-size: 16px; /* Define o tamanho da fonte do botão */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+/* Muda a cor de fundo do botão ao passar o mouse */
+button:hover {
+  background-color: #195392; /* Define a nova cor de fundo ao passar o mouse */
+  transition: 0.4s;
+}
+
+/* Estilização do rodapé */
+footer {
+  text-align: center; /* Centraliza o texto do rodapé */
+  margin-top: 50px; /* Adiciona margem acima do rodapé */
+  font-size: 18px; /* Define o tamanho da fonte do rodapé */
+  color:  #1e88e5; /* Define a cor do texto do rodapé como branca */
+}
+
+/* Estilização para o modal */
+.modal {
+  display: none; /* Inicialmente oculta o modal */
+  position: fixed; /* Posiciona o modal fixo na tela */
+  z-index: 1; /* Garante que o modal fique acima de outros elementos */
+  left: 0; /* Alinha o modal à esquerda da tela */
+  top: 0; /* Alinha o modal ao topo da tela */
+  width: 100%; /* Define a largura do modal como 100% da tela */
+  height: 100%; /* Define a altura do modal como 100% da tela */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido para o modal */
+}
+
+/* Estilização do conteúdo do modal */
+.modal-conteudo {
+  background-color: white; /* Define a cor de fundo do conteúdo do modal como branca */
+  margin: 10% auto; /* Centraliza o conteúdo com margem em cima e em baixo */
+  padding: 20px; /* Adiciona preenchimento interno ao conteúdo do modal */
+  border-radius: 5px; /* Arredonda os cantos do conteúdo do modal */
+  width: 400px; /* Define uma largura fixa para o conteúdo do modal */
+}
+
+/* Estilização do botão de fechar o modal */
+.fecharModal {
+  color: #aaa; /* Define a cor do texto do botão de fechar como um cinza claro */
+  float: right; /* Alinha o botão de fechar à direita */
+  font-size: 28px; /* Define o tamanho da fonte do botão de fechar */
+  font-weight: bold; /* Define o texto do botão de fechar como negrito */
+}
+
+/* Muda a cor do botão de fechar ao passar o mouse */
+.fecharModal:hover,
+.fecharModal:focus {
+  color: black; /* Muda a cor para preto ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilização para conteúdo de abas */
+.conteudo-aba {
+  display: none; /* Inicialmente oculta o conteúdo das abas */
+}
+
+/* Exibe o conteúdo da aba ativa */
+.conteudo-aba.ativa {
+  display: block; /* Exibe o conteúdo da aba ativa */
+}
+
+/* Estilização para as abas de autenticação */
+.abasAutenticacao {
+  display: flex; /* Exibe as abas em linha */
+  justify-content: space-around; /* Distribui o espaço entre as abas */
+  margin-bottom: 10px; /* Adiciona margem em baixo das abas */
+}
+
+/* Estilização dos links das abas */
+.aba-link {
+  background: none; /* Remove a cor de fundo do link */
+  border: none; /* Remove a borda do link */
+  padding: 10px 20px; /* Adiciona preenchimento interno ao link */
+  font-weight: bold; /* Define o texto do link como negrito */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  color: black; /* Define a cor do texto do link como preto */
+}
+
+/* Muda a cor de fundo do link da aba ao passar o mouse */
+.aba-link:hover {
+  background-color: #f0f0f0; /* Define a cor de fundo ao passar o mouse */
+}
+.descer-chek {
+  display: flex;
+}
+
+/* Linha nova, links do cabeçalho mobile  */
+
+@media (max-width: 480px) {
+ 
+  header .menu a {
+      font-size: 1vh;
+  }
+}
