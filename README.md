@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="" src=".github/preview.png" width="100%">
 </p>
-
+<br><br>
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 - Figma
-
+<br><br>
 ## 💻 Projeto
 
 Este projeto foi desenvolvido como parte do Projeto Integrador da Extensão II da UNIFAGOC. Ele representou uma experiência incrível, proporcionando uma aprendizagem aprofundada nas áreas de JavaScript, CSS e HTML.
