@@ -98,5 +98,5 @@
            }
            localStorage.setItem("equipes", JSON.stringify(equipes)); // Salva as equipes no localStorage
            // Redireciona para outra página
-           window.location.href = "/assets/.src/VisãoGeral.html"; // Muda a página atual para "VisãoGeral.html"
+           window.location.href = "VisãoGeral.html"; // Muda a página atual para "VisãoGeral.html"
        });
