@@ -350,19 +350,24 @@ border-radius: 8px; /* Bordas arredondadas na imagem */
       margin: 0 auto;
   }
 
-  .header a {
-      font-size: 44%;
+
+}
+
+@media (max-width: 767px) {th,td 
+  {
+  font-size: 12px;
+  padding: 5px;
   }
 }
+@media (max-width: 480px) {
 
-@media (max-width: 390px){
-  .header a {
-    font-size: 40%;
-}
-}
+  .header {
+      font-size: 5px;
+  }
 
-@media (max-width: 360px){
-  .header a {
-    font-size: 38%;
-}
+  a.btn {
+      
+ font-size: 70%;
+  
+  }
 }

@@ -448,21 +448,22 @@
         margin: 1vh;
         color: #1e88e5;
     }
-
-    @media (max-width: 480px) {
-
-        .header {
-            font-size: 36%;
+    @media (max-width: 767px) {th,td 
+        {
+        font-size: 12px;
+        padding: 5px;
         }
-
-
     }
-
-    @media (max-width: 360px){
-        .header a {
-          font-size: 5px;
-      }
-      }
-
-   
-
+    @media (max-width: 480px) {
+    
+        .header {
+            font-size: 5px;
+        }
+    
+        a.btn {
+            
+       font-size: 70%;
+        
+        }
+    }
+    

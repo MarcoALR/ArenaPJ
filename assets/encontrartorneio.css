@@ -165,12 +165,12 @@ th {
 @media (max-width: 480px) {
 
     .header {
-        font-size: 6px;
+        font-size: 5px;
     }
 
     a.btn {
         
-   font-size: 90%;
+   font-size: 70%;
     
     }
 }
