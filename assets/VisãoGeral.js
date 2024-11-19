@@ -64,7 +64,6 @@ document.getElementById("closeModal").addEventListener("click", function () {
 
 // Função para criar a lista de equipes no modal e permitir edição
 
-
 function criarListaEquipesModal() {
   const modalTeamsList = document.getElementById("modalTeamsList"); // Obtém a lista de equipes do modal
   modalTeamsList.innerHTML = ""; // Limpa o conteúdo do modal
